@@ -28,8 +28,6 @@ class TestXMLValidation(TransactionCase):
             }
         )
         document._onchange_fiscal_operation_id()
-        document._onchange_document_type_id()
-        document._onchange_document_serie_id()
         line = document_line_model.create(
             {
                 "document_id": document.id,
@@ -69,8 +67,6 @@ class TestXMLValidation(TransactionCase):
             }
         )
         document._onchange_fiscal_operation_id()
-        document._onchange_document_type_id()
-        document._onchange_document_serie_id()
 
         # Line 1
         line = document_line_model.create(
