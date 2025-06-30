@@ -13,7 +13,7 @@ class TestSubsequentOperation(TransactionCase):
         ).copy()
 
         self.so_simples_faturamento = self.env.ref(
-            "l10n_br_fiscal.so_simples_faturamento"
+            "l10n_br_fiscal_subsequent_document.so_simples_faturamento"
         )
 
         self.tax_icms_12 = self.env.ref("l10n_br_fiscal.tax_icms_12")

@@ -4,7 +4,7 @@
 
 from odoo import fields, models
 
-from ..constants.fiscal import SITUACAO_EDOC
+from odoo.addons.l10n_br_fiscal.constants.fiscal import SITUACAO_EDOC
 
 SUBSEQUENT_CONDITION = [
     ("manual", "Manualmente"),
