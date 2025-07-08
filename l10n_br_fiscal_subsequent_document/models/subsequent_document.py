@@ -6,7 +6,7 @@
 
 from odoo import api, fields, models
 
-from ..constants.fiscal import (
+from odoo.addons.l10n_br_fiscal.constants.fiscal import (
     MODELO_FISCAL_CFE,
     MODELO_FISCAL_CUPOM_FISCAL_ECF,
     MODELO_FISCAL_NFCE,
