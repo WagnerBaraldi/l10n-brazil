@@ -115,8 +115,8 @@ class NfeImport(models.TransientModel):
             uom_id = self.env["uom.uom"].search(
                 [
                     "|",
-                    ("code", "=", product.prod.uCom),
-                    ("code", "=", product.prod.uTrib),
+                    ("alias_ids.code", "=", product.prod.uCom),
+                    ("alias_ids.code", "=", product.prod.uTrib),
                 ],
                 limit=1,
             )
